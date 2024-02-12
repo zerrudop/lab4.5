@@ -1,6 +1,100 @@
+:root{
+    --jeffs-favorite-color: blue;
+}
+
+div:hover{
+    background-color: #5a5955;
+    
+}
+
+main{
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 120px 60px 60px 60px 60px;
+    grid-template-rows: 100px 100px;
+    grid-auto-flow: column;
+    
+    gap: 10px;
+}
+
+.module{
+    border-radius: 10%;
+    background: #ccc;
+}
+
+.module.one{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.circle.one{
+    margin: 10%;
+    height:100px;
+    display: grid;
+
+    border-radius: 75%;
+    color: #ffc508;
+    background: #ffc508;
+}
+
+.planet{
+    margin: 20%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    height:35px;
+    display: grid;
+    font-size: 0px;
+    border-radius: 75%;
+    
+}
+
+.planet.one{
+    background-image: linear-gradient(rgb(255, 187, 0), rgb(71, 58, 189), rgb(204, 177, 89));
+}
+
+.planet.two{
+    background-image: linear-gradient(rgb(122, 91, 5), rgb(250, 172, 28), rgb(148, 115, 9));
+}
+
+.planet.three{
+    background-image: conic-gradient(rgb(68, 153, 187), rgb(16, 139, 16), green, blue, rgb(49, 33, 87));
+}
+
+.planet.four{
+    background-color: rgb(255, 51, 0);
+}
+
+.planet.five{
+    background-image: conic-gradient(from 90deg, rgb(190, 93, 69), rgb(223, 196, 124), rgb(128, 98, 0));
+}
+
+.planet.six{
+    font-size: 12px;
+    background-image: linear-gradient(rgb(148, 121, 3), rgb(196, 183, 4));
+}
+.ring{
+    color: #695511;
+    margin-top: 5%;
+    
+    position: relative;
+    float: left;
+    clear:both;
+    padding-right: 40px;
+}
+
+.planet.seven{
+    background-image: radial-gradient(rgb(135, 215, 240), rgb(56, 193, 218), rgb(6, 93, 109));
+}
+
+.planet.eight{
+    background-image: linear-gradient(rgb(69, 90, 209), rgb(2, 135, 224), rgb(50, 52, 146));
+}
+
 body {
     font-family: Helvetica, sans-serif;
-    color: #EAE8FF;
+    color: var(--jeffs-favorite-color);
     background: #2D3142;
     padding: 0 40px;
     text-align: center;
@@ -43,6 +137,14 @@ h1 strong {
     background: linear-gradient(45deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+h3{
+    font-size: 12px;
+}
+
+p{
+    font-size: 12px;
 }
 
 img.about {
